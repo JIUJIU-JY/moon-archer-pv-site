@@ -7,7 +7,7 @@ export default function Storyboard() {
   return (
     <section className="section-shell">
       <p className="section-kicker">PV Storyboard</p>
-      <h1 className="section-title">8 个 PV 分镜</h1>
+      <h1 className="section-title">Eight PV Shots</h1>
       <div className="mt-8 grid gap-6">
         {config.storyboard.map((shot) => (
           <StoryboardCard key={shot.id} shot={shot} />

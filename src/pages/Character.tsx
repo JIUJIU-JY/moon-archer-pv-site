@@ -7,7 +7,7 @@ export default function Character() {
   return (
     <section className="section-shell">
       <p className="section-kicker">Character Design</p>
-      <h1 className="section-title">角色设定卡</h1>
+      <h1 className="section-title">Design Sheet</h1>
       <div className="mt-8">
         <CharacterCard character={config.character} />
       </div>

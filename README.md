@@ -1,8 +1,8 @@
-# 月光弓手女神 PV 展示网站
+# Moonlit Archer Goddess PV Showcase
 
-第一阶段目标：整理资源路径，保证首页、角色设定、PV 分镜、素材图库、角色卡页面稳定显示。
+Static Vite + React + TypeScript showcase site for the Moonlit Archer Goddess PV.
 
-## 本地运行
+## Local Commands
 
 ```bash
 npm install
@@ -10,38 +10,38 @@ npm run dev
 npm run build
 ```
 
-如果 Windows PowerShell 拦截 `npm.ps1`，可以改用：
+If Windows PowerShell blocks `npm.ps1`, use:
 
 ```bash
 npm.cmd run dev
 npm.cmd run build
 ```
 
-## 资源目录
+## Asset Directories
 
-图片统一放在：
+Images:
 
 ```text
 public/assets/images/
 ```
 
-PV 视频统一放在：
+PV videos:
 
 ```text
 public/assets/videos/
 ```
 
-角色卡页面统一放在：
+Art book page images:
 
 ```text
 public/assets/character-card/pages/
 ```
 
-页面引用的路径都来自 `src/data/siteConfig.ts`。首页主视觉使用 `/assets/images/main-visual.png`，首页 PV 使用 `/assets/videos/01-opening-walk.mp4`。
+All page asset references are driven by `src/data/siteConfig.ts`.
 
-## 角色卡
+## Art Book
 
-角色卡页面路径为 `/character-card`，展示：
+The `/character-card` route displays:
 
 - `/assets/character-card/pages/character-card-01-cover.png`
 - `/assets/character-card/pages/character-card-02-visual-identity.png`
@@ -52,4 +52,4 @@ public/assets/character-card/pages/
 - `/assets/character-card/pages/character-card-07-skill-system.png`
 - `/assets/character-card/pages/character-card-08-world-production.png`
 
-点击任意角色卡可以放大预览。
+Click any art book page to open a larger preview.

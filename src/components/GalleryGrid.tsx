@@ -69,7 +69,7 @@ export default function GalleryGrid({ categories }: GalleryGridProps) {
               className="absolute right-4 top-4 z-10 icon-button bg-slate-950/80"
               type="button"
               onClick={() => setPreviewItem(null)}
-              title="关闭预览"
+              title="Close preview"
             >
               <X className="h-5 w-5" />
             </button>

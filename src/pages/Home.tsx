@@ -56,7 +56,7 @@ export default function Home() {
           className="absolute right-5 top-5 z-20 inline-flex items-center gap-2 rounded-full border border-white/20 bg-slate-950/55 px-4 py-2 text-sm font-semibold text-white backdrop-blur-xl transition hover:bg-white/15"
         >
           <SkipForward className="h-4 w-4" />
-          跳过
+          Skip
         </button>
       </section>
     );
@@ -67,7 +67,7 @@ export default function Home() {
       <HeroSection config={config} />
       <section className="section-shell">
         <p className="section-kicker">PV Preview</p>
-        <h2 className="section-title">月下八幕</h2>
+        <h2 className="section-title">Moonlit Preview</h2>
         <div className="mt-7 grid gap-6">
           {config.storyboard.slice(0, 2).map((shot) => (
             <StoryboardCard key={shot.id} shot={shot} />

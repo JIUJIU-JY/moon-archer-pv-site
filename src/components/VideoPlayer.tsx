@@ -60,7 +60,7 @@ export default function VideoPlayer({ src, poster, title, className = "" }: Vide
     >
       {hasError ? (
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-950 via-blue-950 to-cyan-950 p-5 text-center text-sm text-cyan-100/75">
-          <span className="break-all">视频路径待替换：{src}</span>
+          <span className="break-all">Video path unavailable: {src}</span>
         </div>
       ) : (
         <video
@@ -82,13 +82,13 @@ export default function VideoPlayer({ src, poster, title, className = "" }: Vide
       <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-3 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-3">
         <p className="min-w-0 truncate text-sm font-medium text-white">{title}</p>
         <div className="flex shrink-0 items-center gap-2">
-          <button className="icon-button" onClick={togglePlay} type="button" title={isPlaying ? "暂停" : "播放"}>
+          <button className="icon-button" onClick={togglePlay} type="button" title={isPlaying ? "Pause" : "Play"}>
             {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
           </button>
-          <button className="icon-button" onClick={toggleMuted} type="button" title={isMuted ? "取消静音" : "静音"}>
+          <button className="icon-button" onClick={toggleMuted} type="button" title={isMuted ? "Unmute" : "Mute"}>
             {isMuted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
           </button>
-          <button className="icon-button" onClick={replay} type="button" title="重新播放">
+          <button className="icon-button" onClick={replay} type="button" title="Replay">
             <RotateCcw className="h-4 w-4" />
           </button>
         </div>

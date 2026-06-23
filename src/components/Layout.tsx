@@ -24,7 +24,7 @@ export default function Layout() {
       <div className="pointer-events-none fixed inset-0 -z-10 opacity-35">
         <img
           src={config.hero.backgroundImage}
-          alt="月海星空背景"
+          alt="Moonlit star sea background"
           loading="lazy"
           className="h-full w-full object-cover"
         />

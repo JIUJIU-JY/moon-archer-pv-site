@@ -55,7 +55,7 @@ select {
   }
 
   .section-title {
-    @apply mt-3 font-display text-3xl font-semibold text-white sm:text-4xl;
+    @apply mt-3 font-display text-2xl font-semibold text-white sm:text-3xl;
   }
 
   .soft-input {

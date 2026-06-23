@@ -11,7 +11,7 @@ export default function CharacterCardPages() {
   return (
     <section className="section-shell">
       <p className="section-kicker">Character Card</p>
-      <h1 className="section-title">角色卡页面</h1>
+      <h1 className="section-title">Art Book Pages</h1>
       <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {config.characterCardPages.map((page) => (
           <button
@@ -37,7 +37,7 @@ export default function CharacterCardPages() {
               className="absolute right-4 top-4 z-10 icon-button bg-slate-950/80"
               type="button"
               onClick={() => setPreview(null)}
-              title="关闭预览"
+              title="Close preview"
             >
               <X className="h-5 w-5" />
             </button>

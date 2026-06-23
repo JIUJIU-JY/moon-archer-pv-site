@@ -25,7 +25,7 @@ export default function AssetImage({
       >
         <div className="flex flex-col items-center gap-3 px-5 text-center">
           <ImageIcon className="h-8 w-8" />
-          <span className="break-all text-xs">{src || "未设置图片路径"}</span>
+          <span className="break-all text-xs">{src || "Image path is not set"}</span>
         </div>
       </div>
     );

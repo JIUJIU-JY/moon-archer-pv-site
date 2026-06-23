@@ -10,22 +10,22 @@ export default function CharacterCard({ character }: CharacterCardProps) {
   const { info, images, designSections, skills } = character;
 
   const imageSpecs = [
-    { title: "主图", src: images.mainVisual, alt: `${info.name}主视觉图`, ratio: "aspect-[4/5]" },
-    { title: "正面全身", src: images.fullFront, alt: `${info.name}正面全身`, ratio: "aspect-[3/4]" },
-    { title: "背面图", src: images.fullBack, alt: `${info.name}背面图`, ratio: "aspect-[3/4]" },
-    { title: "侧面图", src: images.sideView, alt: `${info.name}侧面图`, ratio: "aspect-[3/4]" },
-    { title: "半身肖像", src: images.halfPortrait, alt: `${info.name}半身肖像`, ratio: "aspect-[4/5]" },
-    { title: "表情表", src: images.expressionSheet, alt: `${info.name}表情表`, ratio: "aspect-[4/3]" },
-    { title: "三视图", src: images.threeView, alt: `${info.name}三视图`, ratio: "aspect-[4/3]" },
-    { title: "透明背景立绘", src: images.transparentStand, alt: `${info.name}透明背景立绘`, ratio: "aspect-[3/4]" },
+    { title: "Main Visual", src: images.mainVisual, alt: `${info.name} main visual`, ratio: "aspect-[4/5]" },
+    { title: "Full Front", src: images.fullFront, alt: `${info.name} full front`, ratio: "aspect-[3/4]" },
+    { title: "Full Back", src: images.fullBack, alt: `${info.name} full back`, ratio: "aspect-[3/4]" },
+    { title: "Side View", src: images.sideView, alt: `${info.name} side view`, ratio: "aspect-[3/4]" },
+    { title: "Half Portrait", src: images.halfPortrait, alt: `${info.name} half portrait`, ratio: "aspect-[4/5]" },
+    { title: "Expression Sheet", src: images.expressionSheet, alt: `${info.name} expression sheet`, ratio: "aspect-[4/3]" },
+    { title: "Three View", src: images.threeView, alt: `${info.name} three view`, ratio: "aspect-[4/3]" },
+    { title: "Transparent Standee", src: images.transparentStand, alt: `${info.name} transparent standee`, ratio: "aspect-[3/4]" },
   ];
 
   const detailSpecs = [
-    { title: "服装细节", src: images.outfitDetail, alt: `${info.name}服装细节` },
-    { title: "服装结构", src: images.outfitStructure, alt: `${info.name}服装结构` },
-    { title: "武器细节", src: images.weaponDetail, alt: `${info.name}武器细节` },
-    { title: "手部弓细节", src: images.handBowDetail, alt: `${info.name}手部弓细节` },
-    { title: "张弓动作", src: images.actionBow, alt: `${info.name}张弓动作` },
+    { title: "Costume Detail", src: images.outfitDetail, alt: `${info.name} costume detail` },
+    { title: "Costume Structure", src: images.outfitStructure, alt: `${info.name} costume structure` },
+    { title: "Weapon Detail", src: images.weaponDetail, alt: `${info.name} weapon detail` },
+    { title: "Hand Bow Detail", src: images.handBowDetail, alt: `${info.name} hand bow detail` },
+    { title: "Bow Action", src: images.actionBow, alt: `${info.name} bow action` },
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function CharacterCard({ character }: CharacterCardProps) {
         <div className="glass-panel rounded-lg p-4">
           <AssetImage
             src={images.mainVisual}
-            alt={`${info.name}主视觉`}
+            alt={`${info.name} main visual`}
             className="aspect-[4/5] w-full rounded-md object-cover"
           />
         </div>
@@ -46,8 +46,8 @@ export default function CharacterCard({ character }: CharacterCardProps) {
           <p className="mt-5 leading-8 text-slate-200">{info.intro}</p>
 
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            <InfoItem label="属性" value={info.attribute} />
-            <InfoItem label="武器" value={info.weapon} />
+            <InfoItem label="Attribute" value={info.attribute} />
+            <InfoItem label="Weapon" value={info.weapon} />
           </div>
 
           <div className="mt-6 flex flex-wrap gap-2">
@@ -65,7 +65,7 @@ export default function CharacterCard({ character }: CharacterCardProps) {
 
       <section>
         <p className="section-kicker">Character Images</p>
-        <h2 className="section-title">基础图片</h2>
+        <h2 className="section-title">Image Set</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {imageSpecs.map((item) => (
             <ImageSpec key={item.title} {...item} />
@@ -75,7 +75,7 @@ export default function CharacterCard({ character }: CharacterCardProps) {
 
       <section>
         <p className="section-kicker">Design Details</p>
-        <h2 className="section-title">服装 / 武器 / 动作</h2>
+        <h2 className="section-title">Costume / Weapon / Action</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {detailSpecs.map((item) => (
             <ImageSpec key={item.title} {...item} ratio="aspect-[4/3]" />
@@ -99,8 +99,8 @@ export default function CharacterCard({ character }: CharacterCardProps) {
       </section>
 
       <section>
-        <p className="section-kicker">Skill Settings</p>
-        <h2 className="section-title">技能图</h2>
+        <p className="section-kicker">Skill Art</p>
+        <h2 className="section-title">Skill Images</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-3">
           {skills.map((skill) => (
             <article key={skill.name} className="glass-panel overflow-hidden rounded-lg">
